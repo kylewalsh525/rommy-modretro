@@ -33,10 +33,10 @@ The companion's synthetic receipt count is not a production learning update. The
 
 ## Inspect the artifacts
 
-`integrations/chromatic/build/` contains the original `rommy-quiz.gb`, its `assignment.json`, emulator screen captures, battery saves and `emulator-import-report.json`. The largest layout has its own `boundary-32/` directory. Keep each ROM, assignment and save together. The fixture flag prevents these demonstration lessons from being uploaded as real student progress.
+After running the checks in the source kit, `integrations/chromatic/build/` contains the original `rommy-quiz.gb`, its `assignment.json`, emulator screen captures, battery saves and `emulator-import-report.json`. The largest layout has its own `boundary-32/` directory. Keep each ROM, assignment and save together. The fixture flag prevents these demonstration lessons from being uploaded as real student progress.
 
 Open the demo ROM in a compatible GB/GBC emulator, press A to begin, use Up/Down to choose, A to save and B to return before submission. This demonstration exercises the reusable quiz module. Integrate `rommy_quiz_run(question_index)` at a checkpoint in an original homebrew game to return to that game's code after the question; the module does not inject itself into an unrelated cartridge.
 
-CI attempts to retain build artifacts for seven days. If the account's artifact quota is full, test outcomes and diagnostics remain in the workflow log; local reproduction still creates all files above.
+The private source repository’s CI attempts to retain build artifacts for seven days. Those workflow logs and artifacts require source-repository access. If the account's artifact quota is full, test outcomes and diagnostics remain in the workflow log; local reproduction still creates all files above.
 
 The exact physical support boundary is documented in [HARDWARE.md](HARDWARE.md).

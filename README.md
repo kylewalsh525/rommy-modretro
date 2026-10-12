@@ -164,7 +164,7 @@ The reference ROM needs an MBC5-compatible cartridge with at least **8 KiB persi
 
 Each lesson holds at most **32 questions**; the save journal holds **338 answer records** and stops when full. Import and archive that lesson before deliberately preparing a new one. Correct answers are present in the ROM for offline feedback, so this is a practice-learning integration.
 
-This package is a native GBDK source module. A GB Studio plugin, M64 adapter, automatic cartridge patcher, and consumer device-pairing service are not included. For same-screen quizzes on Linux emulators, use the separate [RetroArch / RetroPie bridge](https://rommygames.netlify.app/developers/docs/retro-integrations).
+The integration kit is a native GBDK source module. A GB Studio plugin, M64 adapter, automatic cartridge patcher, and consumer device-pairing service are not included. For same-screen quizzes on Linux emulators, use the separate [RetroArch / RetroPie bridge](https://rommygames.netlify.app/developers/docs/retro-integrations).
 
 ## Further reading
 
